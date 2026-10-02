@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>NETFLIX</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+
+    <style>
+
+        body {
+            font-family: "Inter", sans-serif;
+        }
+
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+    </style>
+
+</head>
+
+
+<body class="bg-[#09090b] text-white">
+
+
+<!-- =====================================================
+     FLOATING NAVIGATION
+===================================================== -->
+
+<header class="fixed top-0 left-0 right-0 z-50 px-4 md:px-8 pt-4">
+
+    <nav class="
+        max-w-7xl
+        mx-auto
+        flex
+        items-center
+        justify-between
+        px-5
+        py-4
+        rounded-2xl
+        bg-black/60
+        backdrop-blur-xl
+        border
+        border-white/10
+        shadow-2xl
+    ">
+
+        <!-- Logo -->
+
+        <a href="#"
+           class="flex items-center gap-2">
+
+            <div class="
+                w-9
+                h-9
+                rounded-lg
+                bg-gradient-to-br
+                from-red-500
+                to-white-600
+                flex
+                items-center
+                justify-center
+                font-black
+                text-xl
+                
+            ">
+                N
+            </div>
+
+            <span class="font-bold text-xl hidden sm:block">
+                <span class="text-red-800">NETFLIX</span>
+            </span>
+
+        </a>
+
+
+        <!-- Navigation -->
+
+        <div class="hidden md:flex items-center gap-7 text-sm">
+
+            <a href="#"
+               class="text-white font-semibold">
+                Home
+            </a>
+
+            <a href="#trending"
+               class="text-gray-400 hover:text-white transition">
+                Trending
+            </a>
+
+            <a href="#movies"
+               class="text-gray-400 hover:text-white transition">
+                Movies
+            </a>
+
+            <a href="#series"
+               class="text-gray-400 hover:text-white transition">
+                Series
+            </a>
+
+            <a href="#mylist"
+               class="text-gray-400 hover:text-white transition">
+                My List
+            </a>
+
+        </div>
+
+
+        <!-- Right Side -->
+
+        <div class="flex items-center gap-3">
+
+            <button
+                class="
+                    hidden sm:flex
+                    w-10
+                    h-10
+                    rounded-full
+                    bg-white/10
+                    items-center
+                    justify-center
+                    hover:bg-white/20
+                    transition
+                "
+                id="searchButton">
+
+                🔍
+
+            </button>
+
+
+            <button
+                class="
+                    w-10
+                    h-10
+                    rounded-full
+                    bg-gradient-to-br
+                    from-red-500
+                    to-white/600
+                    font-bold
+                ">
+
+                S
+
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<main>
+
+<section class="relative min-h-[720px] flex items-center overflow-hidden">
+
+
+    <!-- Background -->
+
+    <div class="absolute inset-0">
+
+        <img
+            src="images/no 1.png"
+            alt="Featured movie"
+            class="
+                w-full
+                h-full
+                object-cover
+                object-center
+            "
+        >
+
+        <div class="
+            absolute
+            inset-0
+            bg-gradient-to-r
+            from-[#09090b]
+            via-[#09090b]/85
+            to-transparent
+        "></div>
+
+        <div class="
+            absolute
+            inset-0
+            bg-gradient-to-t
+            from-[#09090b]
+            via-transparent
+            to-[#09090b]/30
+        "></div>
+
+    </div>
+
+
+    <!-- Hero Content -->
+
+    <div class="
+        relative
+        z-10
+        max-w-7xl
+        mx-auto
+        w-full
+        px-6
+        md:px-8
+        pt-32
+    ">
+
+        <div class="max-w-2xl">
+
+
+            <!-- Badge -->
+
+            <div class="
+                inline-flex
+                items-center
+                gap-2
+                px-3
+                py-1.5
+                rounded-full
+                bg-red-800/15
+                border
+                border-red-800/30
+                text-red-400
+                text-xs
+                font-semibold
+                mb-6
+            ">
+
+                <span class="
+                    w-2
+                    h-2
+                    rounded-full
+                    bg-red-500
+                    animate-pulse
+                "></span>
+
+                NEW RELEASE
+
+            </div>
+
+
+            <!-- Title -->
+
+            <h1 class="
+                text-5xl
+                md:text-7xl
+                lg:text-8xl
+                font-black
+                tracking-tight
+                leading-none
+            ">
+
+                THE LAST
+                <span class="text-red-800">
+                    MISSION
+                </span>
+
+            </h1>
+
+
+            <!-- Movie Information -->
+
+            <div class="
+                flex
+                items-center
+                gap-4
+                mt-6
+                text-sm
+                text-gray-300
+            ">
+
+                <span class="text-green-400 font-bold">
+                    94% Match
+                </span>
+
+                <span>
+                    2026
+                </span>
+
+                <span>
+                    2h 14m
+                </span>
+
+                <span class="
+                    border
+                    border-gray-500
+                    px-2
+                    py-0.5
+                    text-xs
+                ">
+                    16+
+                </span>
+
+            </div>
+
+
+            <!-- Description -->
+
+            <p class="
+                mt-6
+                text-gray-300
+                text-base
+                md:text-lg
+                leading-relaxed
+                max-w-xl
+            ">
+
+                A former elite operative is pulled back into
+                the shadows when a mysterious hostage disappears.
+                Now he has one night to uncover the truth before
+                an entire city becomes the battlefield.
+
+            </p>
+
+
+            <!-- Buttons -->
+
+            <div class="
+                flex
+                flex-wrap
+                gap-3
+                mt-8
+            ">
+
+                <button class="
+                    px-7
+                    py-3.5
+                    rounded-xl
+                    bg-white
+                    text-black
+                    font-bold
+                    hover:bg-gray-200
+                    transition
+                ">
+
+                    ▶ Watch Now
+
+                </button>
+
+
+                <button class="
+                    px-7
+                    py-3.5
+                    rounded-xl
+                    bg-white/10
+                    backdrop-blur
+                    border
+                    border-white/20
+                    font-semibold
+                    hover:bg-white/20
+                    transition
+                ">
+
+                    + My List
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     TRENDING
+===================================================== -->
+
+<section id="trending"
+         class="max-w-7xl mx-auto px-6 md:px-8 py-12">
+
+
+    <div class="
+        flex
+        items-end
+        justify-between
+        mb-6
+    ">
+
+        <div>
+
+            <p class="
+                text-red-800
+                text-xs
+                uppercase
+                tracking-widest
+                font-bold
+            ">
+                What's hot
+            </p>
+
+            <h2 class="
+                text-3xl
+                md:text-4xl
+                font-bold
+                mt-1
+            ">
+                Trending Now
+            </h2>
+
+        </div>
+
+        <button class="
+            text-sm
+            text-gray-400
+            hover:text-white
+        ">
+            View all →
+        </button>
+
+    </div>
+
+
+    <div class="
+        flex
+        gap-5
+        overflow-x-auto
+        hide-scrollbar
+        pb-4
+    ">
+
+
+        <!-- Movie 1 -->
+
+        <article class="
+            min-w-[180px]
+            md:min-w-[220px]
+            group
+            relative
+        ">
+
+            <div class="
+                relative
+                overflow-hidden
+                rounded-2xl
+            ">
+
+                <img
+                    src="images/no 1.png"
+                    alt="Movie 1"
+                    class="
+                        w-full
+                        h-[270px]
+                        md:h-[320px]
+                        object-cover
+                        group-hover:scale-110
+                        transition
+                        duration-500
+                    "
+                >
+
+                <div class="
+                    absolute
+                    inset-0
+                    bg-gradient-to-t
+                    from-black/90
+                    via-transparent
+                    to-transparent
+                    opacity-0
+                    group-hover:opacity-100
+                    transition
+                "></div>
+
+                <button class="
+                    absolute
+                    bottom-4
+                    left-4
+                    w-11
+                    h-11
+                    rounded-full
+                    bg-white
+                    text-black
+                    opacity-0
+                    group-hover:opacity-100
+                    transition
+                ">
+                    ▶
+                </button>
+
+            </div>
+
+            <div class="flex items-center gap-2 mt-3">
+
+                <span class="
+                    text-2xl
+                    font-black
+                    text-gray-600
+                ">
+                    01
+                </span>
+
+                <h3 class="font-semibold">
+                    Shadow Protocol
+                </h3>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- Movie 2 -->
+
+        <article class="
+            min-w-[180px]
+            md:min-w-[220px]
+            group
+        ">
+
+            <div class="
+                relative
+                overflow-hidden
+                rounded-2xl
+            ">
+
+                <img
+                    src="images/no 2.png"
+                    alt="Movie 2"
+                    class="
+                        w-full
+                        h-[270px]
+                        md:h-[320px]
+                        object-cover
+                        group-hover:scale-110
+                        transition
+                        duration-500
+                    "
+                >
+
+                <div class="
+                    absolute
+                    inset-0
+                    bg-black/30
+                    opacity-0
+                    group-hover:opacity-100
+                    transition
+                "></div>
+
+            </div>
+
+            <div class="flex items-center gap-2 mt-3">
+
+                <span class="
+                    text-2xl
+                    font-black
+                    text-gray-600
+                ">
+                    02
+                </span>
+
+                <h3 class="font-semibold">
+                    Last Horizon
+                </h3>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- Movie 3 -->
+
+        <article class="
+            min-w-[180px]
+            md:min-w-[220px]
+            group
+        ">
+
+            <div class="
+                overflow-hidden
+                rounded-2xl
+            ">
+
+                <img
+                    src="images/no 3.png"
+                    alt="Movie 3"
+                    class="
+                        w-full
+                        h-[270px]
+                        md:h-[320px]
+                        object-cover
+                        group-hover:scale-110
+                        transition
+                        duration-500
+                    "
+                >
+
+            </div>
+
+            <div class="flex items-center gap-2 mt-3">
+
+                <span class="
+                    text-2xl
+                    font-black
+                    text-gray-600
+                ">
+                    03
+                </span>
+
+                <h3 class="font-semibold">
+                    Dark Pursuit
+                </h3>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- Movie 4 -->
+
+        <article class="
+            min-w-[180px]
+            md:min-w-[220px]
+            group
+        ">
+
+            <div class="overflow-hidden rounded-2xl">
+
+                <img
+                    src="images/no 4.png"
+                    alt="Movie 4"
+                    class="
+                        w-full
+                        h-[270px]
+                        md:h-[320px]
+                        object-cover
+                        group-hover:scale-110
+                        transition
+                        duration-500
+                    "
+                >
+
+            </div>
+
+            <div class="flex items-center gap-2 mt-3">
+
+                <span class="
+                    text-2xl
+                    font-black
+                    text-gray-600
+                ">
+                    04
+                </span>
+
+                <h3 class="font-semibold">
+                    Black Signal
+                </h3>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- Movie 5 -->
+
+        <article class="
+            min-w-[180px]
+            md:min-w-[220px]
+            group
+        ">
+
+            <div class="overflow-hidden rounded-2xl">
+
+                <img
+                    src="images/no 6.png"
+                    alt="Movie 5"
+                    class="
+                        w-full
+                        h-[270px]
+                        md:h-[320px]
+                        object-cover
+                        group-hover:scale-110
+                        transition
+                        duration-500
+                    "
+                >
+
+            </div>
+
+            <div class="flex items-center gap-2 mt-3">
+
+                <span class="
+                    text-2xl
+                    font-black
+                    text-gray-600
+                ">
+                    05
+                </span>
+
+                <h3 class="font-semibold">
+                    Final Target
+                </h3>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     GENRE FILTER
+===================================================== -->
+
+<section class="max-w-7xl mx-auto px-6 md:px-8 pb-8">
+
+    <div class="flex flex-wrap gap-3">
+
+        <button class="
+            px-5
+            py-2
+            rounded-full
+            bg-red-800
+            text-sm
+            font-semibold
+        ">
+            All
+        </button>
+
+        <button class="
+            px-5
+            py-2
+            rounded-full
+            bg-red-800/15
+            border
+            border-red-800/30
+            text-sm
+            text-gray-300
+            hover:bg-red-800/20
+        ">
+            Action
+        </button>
+
+        <button class="
+            px-5
+            py-2
+            rounded-full
+            bg-white/5
+            border
+            border-white/10
+            text-sm
+            text-gray-300
+            hover:bg-white/10
+        ">
+            Comedy
+        </button>
+
+        <button class="
+            px-5
+            py-2
+            rounded-full
+            bg-red-800/15
+            border
+            border-red-800/30
+            text-sm
+            text-gray-300
+            hover:bg-red-800/20
+        ">
+            Horror
+        </button>
+
+        <button class="
+            px-5
+            py-2
+            rounded-full
+            bg-white/5
+            border
+            border-white/10
+            text-sm
+            text-gray-300
+            hover:bg-white/10
+        ">
+            Drama
+        </button>
+
+        <button class="
+            px-5
+            py-2
+            rounded-full
+            bg-red-800/15
+            border
+            border-red-800/30
+            text-sm
+            text-gray-300
+            hover:bg-red-800/20
+        ">
+            Sci-Fi
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ACTION MOVIES
+===================================================== -->
+
+<section id="movies"
+         class="max-w-7xl mx-auto px-6 md:px-8 py-8">
+
+    <div class="mb-6">
+
+        <p class="
+            text-purple-400
+            text-xs
+            uppercase
+            tracking-widest
+            font-bold
+        ">
+            Adrenaline
+        </p>
+
+        <h2 class="
+            text-3xl
+            font-bold
+            mt-1
+        ">
+            Action Picks
+        </h2>
+
+    </div>
+
+
+    <div class="
+        grid
+        grid-cols-2
+        sm:grid-cols-3
+        md:grid-cols-4
+        lg:grid-cols-5
+        gap-4
+    ">
+
+
+        <article class="group">
+
+            <div class="
+                relative
+                overflow-hidden
+                rounded-xl
+            ">
+
+                <img
+                    src="images/no 1.png"
+                    alt="Action movie 1"
+                    class="
+                        w-full
+                        aspect-[2/3]
+                        object-cover
+                        group-hover:scale-105
+                        transition
+                        duration-500
+                    "
+                >
+
+                <div class="
+                    absolute
+                    inset-0
+                    bg-gradient-to-t
+                    from-black
+                    via-transparent
+                    opacity-0
+                    group-hover:opacity-100
+                    transition
+                "></div>
+
+            </div>
+
+            <h3 class="mt-3 font-semibold">
+                Red Zone
+            </h3>
+
+            <p class="text-xs text-gray-500 mt-1">
+                Action • 2026
+            </p>
+
+        </article>
+
+
+        <article class="group">
+
+            <div class="overflow-hidden rounded-xl">
+
+                <img
+                    src="images/no 2.png"
+                    alt="Action movie 2"
+                    class="
+                        w-full
+                        aspect-[2/3]
+                        object-cover
+                        group-hover:scale-105
+                        transition
+                        duration-500
+                    "
+                >
+
+            </div>
+
+            <h3 class="mt-3 font-semibold">
+                No Escape
+            </h3>
+
+            <p class="text-xs text-gray-500 mt-1">
+                Action • 2026
+            </p>
+
+        </article>
+
+
+        <article class="group">
+
+            <div class="overflow-hidden rounded-xl">
+
+                <img
+                    src="images/no 7.png"
+                    alt="Action movie 3"
+                    class="
+                        w-full
+                        aspect-[2/3]
+                        object-cover
+                        group-hover:scale-105
+                        transition
+                        duration-500
+                    "
+                >
+
+            </div>
+
+            <h3 class="mt-3 font-semibold">
+                The Retribution
+            </h3>
+
+            <p class="text-xs text-gray-500 mt-1">
+                Action • 2026
+            </p>
+
+        </article>
+
+
+        <article class="group">
+
+            <div class="overflow-hidden rounded-xl">
+
+                <img
+                    src="images/no 6.png"
+                    alt="Action movie 4"
+                    class="
+                        w-full
+                        aspect-[2/3]
+                        object-cover
+                        group-hover:scale-105
+                        transition
+                        duration-500
+                    "
+                >
+
+            </div>
+
+            <h3 class="mt-3 font-semibold">
+                Silent Strike
+            </h3>
+
+            <p class="text-xs text-gray-500 mt-1">
+                Action • 2026
+            </p>
+
+        </article>
+
+
+        <article class="group">
+
+            <div class="overflow-hidden rounded-xl">
+
+                <img
+                    src="images/no 5.png"
+                    alt="Action movie 5"
+                    class="
+                        w-full
+                        aspect-[2/3]
+                        object-cover
+                        group-hover:scale-105
+                        transition
+                        duration-500
+                    "
+                >
+
+            </div>
+
+            <h3 class="mt-3 font-semibold">
+                Dead Reckoning
+            </h3>
+
+            <p class="text-xs text-gray-500 mt-1">
+                Action • 2026
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTINUE WATCHING
+===================================================== -->
+
+<section class="max-w-7xl mx-auto px-6 md:px-8 py-12">
+
+    <div class="flex items-center justify-between mb-6">
+
+        <h2 class="text-3xl font-bold">
+            Continue Watching
+        </h2>
+
+        <button class="
+            text-sm
+            text-gray-400
+            hover:text-white
+        ">
+            Manage →
+        </button>
+
+    </div>
+
+
+    <div class="
+        grid
+        grid-cols-1
+        md:grid-cols-3
+        gap-5
+    ">
+
+
+        <article class="
+            group
+            relative
+            overflow-hidden
+            rounded-2xl
+            bg-white/5
+        ">
+
+            <img
+                src="images/no 8.png"
+                alt="Continue watching"
+                class="
+                    w-full
+                    h-48
+                    object-cover
+                    group-hover:scale-105
+                    transition
+                    duration-500
+                "
+            >
+
+            <div class="p-4">
+
+                <h3 class="font-semibold">
+                    Midnight Run
+                </h3>
+
+                <p class="text-xs text-gray-500 mt-1">
+                    Episode 4 of 8
+                </p>
+
+                <div class="
+                    h-1
+                    bg-gray-700
+                    rounded-full
+                    mt-4
+                    overflow-hidden
+                ">
+
+                    <div class="
+                        h-full
+                        w-[65%]
+                        bg-red-500
+                    "></div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="
+            group
+            relative
+            overflow-hidden
+            rounded-2xl
+            bg-white/5
+        ">
+
+            <img
+                src="images/no 7.png"
+                alt="Continue watching"
+                class="
+                    w-full
+                    h-48
+                    object-cover
+                    group-hover:scale-105
+                    transition
+                    duration-500
+                "
+            >
+
+            <div class="p-4">
+
+                <h3 class="font-semibold">
+                    Beyond Earth
+                </h3>
+
+                <p class="text-xs text-gray-500 mt-1">
+                    Episode 6 of 10
+                </p>
+
+                <div class="
+                    h-1
+                    bg-gray-700
+                    rounded-full
+                    mt-4
+                    overflow-hidden
+                ">
+
+                    <div class="
+                        h-full
+                        w-[40%]
+                        bg-red-500
+                    "></div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="
+            group
+            relative
+            overflow-hidden
+            rounded-2xl
+            bg-white/5
+        ">
+
+            <img
+                src="images/no 6.png"
+                alt="Continue watching"
+                class="
+                    w-full
+                    h-48
+                    object-cover
+                    group-hover:scale-105
+                    transition
+                    duration-500
+                "
+            >
+
+            <div class="p-4">
+
+                <h3 class="font-semibold">
+                    City of Shadows
+                </h3>
+
+                <p class="text-xs text-gray-500 mt-1">
+                    Episode 2 of 6
+                </p>
+
+                <div class="
+                    h-1
+                    bg-gray-700
+                    rounded-full
+                    mt-4
+                    overflow-hidden
+                ">
+
+                    <div class="
+                        h-full
+                        w-[25%]
+                        bg-red-500
+                    "></div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="
+    border-t
+    border-white/10
+    mt-12
+">
+
+    <div class="
+        max-w-7xl
+        mx-auto
+        px-6
+        md:px-8
+        py-12
+    ">
+
+        <div class="
+            flex
+            flex-col
+            md:flex-row
+            justify-between
+            gap-8
+        ">
+
+            <div>
+
+                <div class="
+                    text-xl
+                    font-black
+                ">
+
+                    STREAM<span class="text-red-500">
+                        FLIX
+                    </span>
+
+                </div>
+
+                <p class="
+                    text-gray-500
+                    text-sm
+                    mt-3
+                    max-w-xs
+                ">
+
+                    Your home for movies, series,
+                    originals and unforgettable stories.
+
+                </p>
+
+            </div>
+
+
+            <div class="
+                grid
+                grid-cols-2
+                md:grid-cols-4
+                gap-x-12
+                gap-y-4
+                text-sm
+            ">
+
+                <a href="#" class="text-gray-500 hover:text-white">
+                    About
+                </a>
+
+                <a href="#" class="text-gray-500 hover:text-white">
+                    Help Center
+                </a>
+
+                <a href="#" class="text-gray-500 hover:text-white">
+                    Privacy
+                </a>
+
+                <a href="#" class="text-gray-500 hover:text-white">
+                    Terms
+                </a>
+
+                <a href="#" class="text-gray-500 hover:text-white">
+                    Careers
+                </a>
+
+                <a href="#" class="text-gray-500 hover:text-white">
+                    Contact
+                </a>
+
+                <a href="#" class="text-gray-500 hover:text-white">
+                    Cookies
+                </a>
+
+                <a href="#" class="text-gray-500 hover:text-white">
+                    Account
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="
+            border-t
+            border-white/10
+            mt-10
+            pt-6
+            text-xs
+            text-gray-600
+        ">
+
+            © 2026 StreamFlix. Educational Netflix
+            cloning project.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</main>
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
